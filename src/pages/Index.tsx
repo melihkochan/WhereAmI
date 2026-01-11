@@ -5,7 +5,6 @@ import LocationCard from "@/components/LocationCard";
 import ActionButton from "@/components/ActionButton";
 import LanguageSelector from "@/components/LanguageSelector";
 import TopographicPattern from "@/components/TopographicPattern";
-import RadarPattern from "@/components/RadarPattern";
 import useGeolocation from "@/hooks/useGeolocation";
 import { useLanguageDetection } from "@/hooks/useLanguageDetection";
 import { toast } from "sonner";
@@ -81,9 +80,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Radar Pattern Background */}
-      <RadarPattern />
-      
       {/* Topographic Pattern Background */}
       <TopographicPattern />
       
@@ -102,13 +98,13 @@ const Index = () => {
       {/* Main content */}
       <div className="relative z-10 min-h-screen flex flex-col px-4 py-4 sm:px-5 sm:py-6 max-w-md mx-auto">
         {/* Header with Language Selector */}
-        <header className="text-center mb-6 sm:mb-8 relative">
+        <header className="text-center mb-8 sm:mb-10 relative">
           {/* Language Selector - Absolute positioned in header */}
           <div className="absolute top-0 right-0 z-20">
             <LanguageSelector />
           </div>
-          <div className="pt-10 sm:pt-12">
-            <h1 className="text-2xl sm:text-3xl font-bold mb-1.5 sm:mb-2">
+          <div className="pt-12 sm:pt-14">
+            <h1 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-2.5">
               {t('app.title').split(' ')[0]} <span className="text-gradient">{t('app.title').split(' ').slice(1).join(' ')}</span>
             </h1>
             <p className="text-xs sm:text-sm text-muted-foreground">
@@ -118,7 +114,7 @@ const Index = () => {
         </header>
 
         {/* Location Pin */}
-        <div className="flex justify-center mb-6 sm:mb-8">
+        <div className="flex justify-center mb-8 sm:mb-10">
           <LocationPin isLocating={location.loading} />
         </div>
 
