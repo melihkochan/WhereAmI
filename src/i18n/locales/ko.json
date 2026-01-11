@@ -2,7 +2,9 @@
   "app": {
     "title": "나는 어디에 있나요?",
     "subtitle": "현재 위치 및 주소 정보",
-    "privacy": "위치 정보는 기기에 저장되며 서버로 전송되지 않습니다."
+    "privacy": "위치 정보는 기기에 저장되며 서버로 전송되지 않습니다.",
+    "madeBy": "개발자:",
+    "developer": "Melih Kochan"
   },
   "location": {
     "loading": "위치를 확인하는 중...",

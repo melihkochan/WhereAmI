@@ -2,7 +2,9 @@
   "app": {
     "title": "Ben Nerdeyim?",
     "subtitle": "Anlık konum ve adres bilgileriniz",
-    "privacy": "Konum bilgileriniz cihazınızda kalır, sunucuya gönderilmez."
+    "privacy": "Konum bilgileriniz cihazınızda kalır, sunucuya gönderilmez.",
+    "madeBy": "Geliştirici:",
+    "developer": "Melih Kochan"
   },
   "location": {
     "loading": "Konumunuz belirleniyor...",

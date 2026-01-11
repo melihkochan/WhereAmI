@@ -2,7 +2,9 @@
   "app": {
     "title": "Where Am I?",
     "subtitle": "Your current location and address information",
-    "privacy": "Your location information stays on your device, it is not sent to the server."
+    "privacy": "Your location information stays on your device, it is not sent to the server.",
+    "madeBy": "Developer:",
+    "developer": "Melih Kochan"
   },
   "location": {
     "loading": "Determining your location...",

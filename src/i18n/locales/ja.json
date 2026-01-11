@@ -2,7 +2,9 @@
   "app": {
     "title": "私はどこにいますか？",
     "subtitle": "現在の位置と住所情報",
-    "privacy": "位置情報はデバイスに保存され、サーバーに送信されません。"
+    "privacy": "位置情報はデバイスに保存され、サーバーに送信されません。",
+    "madeBy": "開発者:",
+    "developer": "Melih Kochan"
   },
   "location": {
     "loading": "位置を確認しています...",

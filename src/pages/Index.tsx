@@ -185,9 +185,20 @@ const Index = () => {
         </div>
 
         {/* Footer */}
-        <footer className="text-center mt-8 pt-4 border-t border-border/50">
+        <footer className="text-center mt-8 pt-4 border-t border-border/50 space-y-2">
           <p className="text-xs text-muted-foreground">
             {t('app.privacy')}
+          </p>
+          <p className="text-xs text-muted-foreground/80">
+            {t('app.madeBy')}{' '}
+            <a 
+              href="https://melihkochan.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors font-medium"
+            >
+              {t('app.developer')}
+            </a>
           </p>
         </footer>
       </div>

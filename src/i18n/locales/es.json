@@ -2,7 +2,9 @@
   "app": {
     "title": "¿Dónde estoy?",
     "subtitle": "Tu ubicación actual e información de dirección",
-    "privacy": "Tu información de ubicación permanece en tu dispositivo, no se envía al servidor."
+    "privacy": "Tu información de ubicación permanece en tu dispositivo, no se envía al servidor.",
+    "madeBy": "Desarrollador:",
+    "developer": "Melih Kochan"
   },
   "location": {
     "loading": "Determinando tu ubicación...",

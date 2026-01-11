@@ -2,7 +2,9 @@
   "app": {
     "title": "我在哪里？",
     "subtitle": "您当前的位置和地址信息",
-    "privacy": "您的位置信息保存在您的设备上，不会发送到服务器。"
+    "privacy": "您的位置信息保存在您的设备上，不会发送到服务器。",
+    "madeBy": "开发者:",
+    "developer": "Melih Kochan"
   },
   "location": {
     "loading": "正在确定您的位置...",
