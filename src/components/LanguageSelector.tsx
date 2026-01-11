@@ -28,13 +28,13 @@ const LanguageSelector = () => {
   const { i18n } = useTranslation();
 
   return (
-    <div className="flex items-center gap-2 glass-card rounded-xl px-3 py-1.5 backdrop-blur-sm border border-border/50">
-      <Globe className="w-4 h-4 text-muted-foreground" />
+    <div className="flex items-center gap-1.5 sm:gap-2 glass-card rounded-lg sm:rounded-xl px-2 sm:px-3 py-1 sm:py-1.5 backdrop-blur-sm border border-border/50">
+      <Globe className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-muted-foreground flex-shrink-0" />
       <Select
         value={i18n.language.split('-')[0]}
         onValueChange={(value) => i18n.changeLanguage(value)}
       >
-        <SelectTrigger className="w-[120px] h-7 text-xs border-none bg-transparent shadow-none focus:ring-0 focus:ring-offset-0 px-0">
+        <SelectTrigger className="w-[100px] sm:w-[120px] h-6 sm:h-7 text-[10px] sm:text-xs border-none bg-transparent shadow-none focus:ring-0 focus:ring-offset-0 px-0">
           <SelectValue />
         </SelectTrigger>
         <SelectContent>
