@@ -1,0 +1,47 @@
+{
+  "app": {
+    "title": "Where Am I?",
+    "subtitle": "Your current location and address information",
+    "privacy": "Your location information stays on your device, it is not sent to the server."
+  },
+  "location": {
+    "loading": "Determining your location...",
+    "error": "Location could not be retrieved",
+    "permissionDenied": "Location permission denied",
+    "positionUnavailable": "Location information is not available",
+    "timeout": "Location request timed out",
+    "notSupported": "Your browser does not support location features",
+    "addressError": "Address could not be retrieved",
+    "addressNotFound": "Address not found",
+    "infoUnavailable": "Location information is not available",
+    "copied": "Location copied!",
+    "updating": "Updating location..."
+  },
+  "labels": {
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "accuracy": "Accuracy",
+    "accuracyTooltip": "GPS accuracy: Shows how far your location might be from the actual location. Smaller values mean higher accuracy.",
+    "update": "Update"
+  },
+  "directions": {
+    "north": "N",
+    "south": "S",
+    "east": "E",
+    "west": "W"
+  },
+  "buttons": {
+    "refresh": "Refresh",
+    "share": "Share",
+    "viewOnMap": "View on Map"
+  },
+  "share": {
+    "title": "Where Am I?",
+    "format": "📍 {{title}}\n\n📌 {{address}}\n🏙️ {{city}}, {{country}}\n🌐 {{coordinates}}\n\n🗺️ {{mapUrl}}"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "returnHome": "Return to Home"
+  }
+}

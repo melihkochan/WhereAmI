@@ -1,0 +1,47 @@
+{
+  "app": {
+    "title": "나는 어디에 있나요?",
+    "subtitle": "현재 위치 및 주소 정보",
+    "privacy": "위치 정보는 기기에 저장되며 서버로 전송되지 않습니다."
+  },
+  "location": {
+    "loading": "위치를 확인하는 중...",
+    "error": "위치를 가져올 수 없습니다",
+    "permissionDenied": "위치 권한이 거부되었습니다",
+    "positionUnavailable": "위치 정보를 사용할 수 없습니다",
+    "timeout": "위치 요청 시간이 초과되었습니다",
+    "notSupported": "브라우저가 위치 기능을 지원하지 않습니다",
+    "addressError": "주소를 가져올 수 없습니다",
+    "addressNotFound": "주소를 찾을 수 없습니다",
+    "infoUnavailable": "위치 정보를 사용할 수 없습니다",
+    "copied": "위치가 복사되었습니다!",
+    "updating": "위치 업데이트 중..."
+  },
+  "labels": {
+    "latitude": "위도",
+    "longitude": "경도",
+    "accuracy": "정확도",
+    "accuracyTooltip": "GPS 정확도: 실제 위치에서 위치가 얼마나 떨어져 있을 수 있는지를 보여줍니다. 값이 작을수록 더 높은 정확도를 의미합니다.",
+    "update": "업데이트"
+  },
+  "directions": {
+    "north": "북",
+    "south": "남",
+    "east": "동",
+    "west": "서"
+  },
+  "buttons": {
+    "refresh": "새로고침",
+    "share": "공유",
+    "viewOnMap": "지도에서 보기"
+  },
+  "share": {
+    "title": "나는 어디에 있나요?",
+    "format": "📍 {{title}}\n\n📌 {{address}}\n🏙️ {{city}}, {{country}}\n🌐 {{coordinates}}\n\n🗺️ {{mapUrl}}"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "앗! 페이지를 찾을 수 없습니다",
+    "returnHome": "홈으로 돌아가기"
+  }
+}

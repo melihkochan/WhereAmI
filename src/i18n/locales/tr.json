@@ -1,0 +1,47 @@
+{
+  "app": {
+    "title": "Ben Nerdeyim?",
+    "subtitle": "Anlık konum ve adres bilgileriniz",
+    "privacy": "Konum bilgileriniz cihazınızda kalır, sunucuya gönderilmez."
+  },
+  "location": {
+    "loading": "Konumunuz belirleniyor...",
+    "error": "Konum alınamadı",
+    "permissionDenied": "Konum izni reddedildi",
+    "positionUnavailable": "Konum bilgisi mevcut değil",
+    "timeout": "Konum isteği zaman aşımına uğradı",
+    "notSupported": "Tarayıcınız konum özelliğini desteklemiyor",
+    "addressError": "Adres alınamadı",
+    "addressNotFound": "Adres bulunamadı",
+    "infoUnavailable": "Konum bilgisi mevcut değil",
+    "copied": "Konum kopyalandı!",
+    "updating": "Konum güncelleniyor..."
+  },
+  "labels": {
+    "latitude": "Enlem",
+    "longitude": "Boylam",
+    "accuracy": "Doğruluk",
+    "accuracyTooltip": "GPS doğruluğu: Konumunuzun gerçek konumdan ne kadar uzakta olabileceğini gösterir. Daha küçük değerler daha yüksek doğruluk demektir.",
+    "update": "Güncelleme"
+  },
+  "directions": {
+    "north": "K",
+    "south": "G",
+    "east": "D",
+    "west": "B"
+  },
+  "buttons": {
+    "refresh": "Yenile",
+    "share": "Paylaş",
+    "viewOnMap": "Haritada Gör"
+  },
+  "share": {
+    "title": "Ben Nerdeyim?",
+    "format": "📍 {{title}}\n\n📌 {{address}}\n🏙️ {{city}}, {{country}}\n🌐 {{coordinates}}\n\n🗺️ {{mapUrl}}"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Sayfa bulunamadı",
+    "returnHome": "Ana Sayfaya Dön"
+  }
+}

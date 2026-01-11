@@ -1,0 +1,47 @@
+{
+  "app": {
+    "title": "私はどこにいますか？",
+    "subtitle": "現在の位置と住所情報",
+    "privacy": "位置情報はデバイスに保存され、サーバーに送信されません。"
+  },
+  "location": {
+    "loading": "位置を確認しています...",
+    "error": "位置情報を取得できませんでした",
+    "permissionDenied": "位置情報の許可が拒否されました",
+    "positionUnavailable": "位置情報が利用できません",
+    "timeout": "位置情報のリクエストがタイムアウトしました",
+    "notSupported": "お使いのブラウザは位置機能をサポートしていません",
+    "addressError": "住所を取得できませんでした",
+    "addressNotFound": "住所が見つかりませんでした",
+    "infoUnavailable": "位置情報が利用できません",
+    "copied": "位置情報をコピーしました！",
+    "updating": "位置情報を更新しています..."
+  },
+  "labels": {
+    "latitude": "緯度",
+    "longitude": "経度",
+    "accuracy": "精度",
+    "accuracyTooltip": "GPS精度：実際の位置から位置がどれだけ離れている可能性があるかを示します。値が小さいほど精度が高いことを意味します。",
+    "update": "更新"
+  },
+  "directions": {
+    "north": "北",
+    "south": "南",
+    "east": "東",
+    "west": "西"
+  },
+  "buttons": {
+    "refresh": "更新",
+    "share": "共有",
+    "viewOnMap": "地図で見る"
+  },
+  "share": {
+    "title": "私はどこにいますか？",
+    "format": "📍 {{title}}\n\n📌 {{address}}\n🏙️ {{city}}, {{country}}\n🌐 {{coordinates}}\n\n🗺️ {{mapUrl}}"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "おっと！ページが見つかりません",
+    "returnHome": "ホームに戻る"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "app": {
+    "title": "Dove sono?",
+    "subtitle": "La tua posizione attuale e informazioni sull'indirizzo",
+    "privacy": "Le tue informazioni di posizione rimangono sul tuo dispositivo, non vengono inviate al server."
+  },
+  "location": {
+    "loading": "Determinazione della tua posizione...",
+    "error": "Impossibile recuperare la posizione",
+    "permissionDenied": "Autorizzazione alla posizione negata",
+    "positionUnavailable": "Informazioni sulla posizione non disponibili",
+    "timeout": "La richiesta di posizione è scaduta",
+    "notSupported": "Il tuo browser non supporta le funzionalità di posizione",
+    "addressError": "Impossibile recuperare l'indirizzo",
+    "addressNotFound": "Indirizzo non trovato",
+    "infoUnavailable": "Informazioni sulla posizione non disponibili",
+    "copied": "Posizione copiata!",
+    "updating": "Aggiornamento della posizione..."
+  },
+  "labels": {
+    "latitude": "Latitudine",
+    "longitude": "Longitudine",
+    "accuracy": "Precisione",
+    "accuracyTooltip": "Precisione GPS: Mostra quanto la tua posizione potrebbe essere lontana dalla posizione reale. Valori più piccoli significano maggiore precisione.",
+    "update": "Aggiornamento"
+  },
+  "directions": {
+    "north": "N",
+    "south": "S",
+    "east": "E",
+    "west": "O"
+  },
+  "buttons": {
+    "refresh": "Aggiorna",
+    "share": "Condividi",
+    "viewOnMap": "Visualizza sulla mappa"
+  },
+  "share": {
+    "title": "Dove sono?",
+    "format": "📍 {{title}}\n\n📌 {{address}}\n🏙️ {{city}}, {{country}}\n🌐 {{coordinates}}\n\n🗺️ {{mapUrl}}"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Ops! Pagina non trovata",
+    "returnHome": "Torna alla home"
+  }
+}

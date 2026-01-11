@@ -1,0 +1,47 @@
+{
+  "app": {
+    "title": "Wo bin ich?",
+    "subtitle": "Ihre aktuelle Position und Adressinformationen",
+    "privacy": "Ihre Standortinformationen bleiben auf Ihrem Gerät und werden nicht an den Server gesendet."
+  },
+  "location": {
+    "loading": "Ihr Standort wird bestimmt...",
+    "error": "Standort konnte nicht abgerufen werden",
+    "permissionDenied": "Standortberechtigung verweigert",
+    "positionUnavailable": "Standortinformationen sind nicht verfügbar",
+    "timeout": "Standortanfrage hat das Zeitlimit überschritten",
+    "notSupported": "Ihr Browser unterstützt keine Standortfunktionen",
+    "addressError": "Adresse konnte nicht abgerufen werden",
+    "addressNotFound": "Adresse nicht gefunden",
+    "infoUnavailable": "Standortinformationen sind nicht verfügbar",
+    "copied": "Standort kopiert!",
+    "updating": "Standort wird aktualisiert..."
+  },
+  "labels": {
+    "latitude": "Breitengrad",
+    "longitude": "Längengrad",
+    "accuracy": "Genauigkeit",
+    "accuracyTooltip": "GPS-Genauigkeit: Zeigt, wie weit Ihre Position von der tatsächlichen Position entfernt sein kann. Kleinere Werte bedeuten höhere Genauigkeit.",
+    "update": "Aktualisierung"
+  },
+  "directions": {
+    "north": "N",
+    "south": "S",
+    "east": "O",
+    "west": "W"
+  },
+  "buttons": {
+    "refresh": "Aktualisieren",
+    "share": "Teilen",
+    "viewOnMap": "Auf Karte anzeigen"
+  },
+  "share": {
+    "title": "Wo bin ich?",
+    "format": "📍 {{title}}\n\n📌 {{address}}\n🏙️ {{city}}, {{country}}\n🌐 {{coordinates}}\n\n🗺️ {{mapUrl}}"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Ups! Seite nicht gefunden",
+    "returnHome": "Zur Startseite zurückkehren"
+  }
+}
