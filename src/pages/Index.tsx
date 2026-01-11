@@ -4,6 +4,7 @@ import LocationPin from "@/components/LocationPin";
 import LocationCard from "@/components/LocationCard";
 import ActionButton from "@/components/ActionButton";
 import LanguageSelector from "@/components/LanguageSelector";
+import TopographicPattern from "@/components/TopographicPattern";
 import useGeolocation from "@/hooks/useGeolocation";
 import { useLanguageDetection } from "@/hooks/useLanguageDetection";
 import { toast } from "sonner";
@@ -79,7 +80,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Background gradient */}
+      {/* Topographic Pattern Background */}
+      <TopographicPattern />
+      
+      {/* Mesh Gradient Background */}
+      <div 
+        className="absolute inset-0 pointer-events-none animate-mesh"
+        style={{ background: 'var(--gradient-mesh)' }}
+      />
+      
+      {/* Radial Gradient Background */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{ background: 'var(--gradient-radial)' }}
@@ -142,12 +152,14 @@ const Index = () => {
             value={formatCoordinate(location.latitude, 'lat')}
             icon={<Navigation />}
             copyable={!!location.latitude}
+            isCoordinate={true}
           />
           <LocationCard
             label={t('labels.longitude')}
             value={formatCoordinate(location.longitude, 'lon')}
             icon={<Compass />}
             copyable={!!location.longitude}
+            isCoordinate={true}
           />
         </div>
 
@@ -157,6 +169,7 @@ const Index = () => {
             value={location.accuracy ? `±${Math.round(location.accuracy)}m` : "---"}
             tooltip={t('labels.accuracyTooltip')}
             icon={<MapPin />}
+            accuracyValue={location.accuracy || undefined}
           />
           <LocationCard
             label={t('labels.update')}

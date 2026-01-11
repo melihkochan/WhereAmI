@@ -7,13 +7,17 @@ interface LocationPinProps {
 const LocationPin = ({ isLocating = false }: LocationPinProps) => {
   return (
     <div className="relative flex items-center justify-center">
-      {/* Outer glow rings */}
+      {/* Outer glow rings - Radar effect */}
       <div className="absolute w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-primary/10 animate-ping" style={{ animationDuration: '2s' }} />
-      <div className="absolute w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-primary/20 animate-ping" style={{ animationDuration: '1.5s', animationDelay: '0.3s' }} />
+      <div className="absolute w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-primary/15 animate-ping" style={{ animationDuration: '1.5s', animationDelay: '0.3s' }} />
+      <div className="absolute w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/20 animate-ping" style={{ animationDuration: '1s', animationDelay: '0.6s' }} />
+      
+      {/* Breathing glow ring */}
+      <div className="absolute w-28 h-28 sm:w-36 sm:h-36 rounded-full border border-primary/20 animate-pulse" />
       
       {/* Main pin container */}
       <div className={`relative z-10 ${isLocating ? 'animate-float' : ''}`}>
-        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center glow-primary animate-pulse-glow">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center glow-primary animate-pulse-glow shadow-[0_0_30px_hsl(174_72%_56%_/_0.5)]">
           <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-primary-foreground" strokeWidth={2.5} />
         </div>
         

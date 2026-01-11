@@ -10,9 +10,11 @@ interface LocationCardProps {
   copyable?: boolean;
   copyValue?: string; // Kopyalanacak değer (value'dan farklı olabilir)
   tooltip?: string; // Açıklayıcı tooltip
+  accuracyValue?: number; // Doğruluk değeri (accuracy için renkli gösterim)
+  isCoordinate?: boolean; // Koordinat için monospace font kullan
 }
 
-const LocationCard = ({ label, value, icon, copyable = false, copyValue, tooltip }: LocationCardProps) => {
+const LocationCard = ({ label, value, icon, copyable = false, copyValue, tooltip, accuracyValue, isCoordinate = false }: LocationCardProps) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -23,9 +25,16 @@ const LocationCard = ({ label, value, icon, copyable = false, copyValue, tooltip
     setTimeout(() => setCopied(false), 2000);
   };
 
+  // Doğruluk rengini belirle
+  const getAccuracyColor = (acc: number) => {
+    if (acc <= 20) return 'border-green-500/30';
+    if (acc <= 100) return 'border-yellow-500/30';
+    return 'border-red-500/30';
+  };
+
   return (
     <div 
-      className={`glass-card rounded-xl p-3 transition-all duration-300 hover:scale-[1.01] ${copyable ? 'cursor-pointer active:scale-[0.98]' : ''}`}
+      className={`glass-card rounded-xl p-3 transition-all duration-300 hover:scale-[1.01] ${copyable ? 'cursor-pointer active:scale-[0.98]' : ''} ${accuracyValue !== undefined ? getAccuracyColor(accuracyValue) : ''}`}
       onClick={handleCopy}
     >
       <div className="flex items-center gap-2.5">
@@ -45,7 +54,17 @@ const LocationCard = ({ label, value, icon, copyable = false, copyValue, tooltip
           ) : (
             <p className="text-[10px] text-muted-foreground uppercase tracking-wide mb-0.5">{label}</p>
           )}
-          <p className="text-xs font-semibold text-foreground break-words leading-tight">{value}</p>
+          <p className={`text-xs font-semibold text-foreground break-words leading-tight ${isCoordinate ? 'font-mono' : ''}`}>{value}</p>
+          {accuracyValue !== undefined && (
+            <div className="mt-1.5 h-1 bg-secondary/30 rounded-full overflow-hidden">
+              <div 
+                className={`h-full rounded-full transition-all duration-300 ${
+                  accuracyValue <= 20 ? 'bg-green-500' : accuracyValue <= 100 ? 'bg-yellow-500' : 'bg-red-500'
+                }`}
+                style={{ width: `${Math.min(100, (1 - Math.min(accuracyValue / 200, 1)) * 100)}%` }}
+              />
+            </div>
+          )}
         </div>
         {copyable && (
           <button 
