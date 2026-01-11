@@ -5,6 +5,7 @@ import LocationCard from "@/components/LocationCard";
 import ActionButton from "@/components/ActionButton";
 import LanguageSelector from "@/components/LanguageSelector";
 import TopographicPattern from "@/components/TopographicPattern";
+import RadarPattern from "@/components/RadarPattern";
 import useGeolocation from "@/hooks/useGeolocation";
 import { useLanguageDetection } from "@/hooks/useLanguageDetection";
 import { toast } from "sonner";
@@ -80,6 +81,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
+      {/* Radar Pattern Background */}
+      <RadarPattern />
+      
       {/* Topographic Pattern Background */}
       <TopographicPattern />
       

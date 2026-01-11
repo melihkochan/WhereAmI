@@ -45,14 +45,14 @@ const LocationCard = ({ label, value, icon, copyable = false, copyValue, tooltip
           {tooltip ? (
             <Tooltip>
               <TooltipTrigger asChild>
-                <div className="text-[10px] text-muted-foreground uppercase tracking-wide mb-0.5 cursor-help">{label}</div>
+                <div className="text-[10px] text-primary/80 uppercase tracking-wide mb-0.5 cursor-help font-medium">{label}</div>
               </TooltipTrigger>
               <TooltipContent>
                 <p className="max-w-xs text-sm">{tooltip}</p>
               </TooltipContent>
             </Tooltip>
           ) : (
-            <p className="text-[10px] text-muted-foreground uppercase tracking-wide mb-0.5">{label}</p>
+            <p className="text-[10px] text-primary/80 uppercase tracking-wide mb-0.5 font-medium">{label}</p>
           )}
           <p className={`text-xs font-semibold text-foreground break-words leading-tight ${isCoordinate ? 'font-mono' : ''}`}>{value}</p>
           {accuracyValue !== undefined && (
